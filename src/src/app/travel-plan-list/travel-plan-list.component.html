@@ -1,0 +1,7 @@
+<div *ngFor="let plan of travelPlans" (click)="viewPlanDetails(plan.id)">
+  <h2>{{ plan.name }}</h2>
+  <p>Destinations:{{ plan.destinations.join(",") }}</p>
+  <p>Dates:{{ plan.startDate | date }} - {{ plan.endDate | date }}</p>
+</div>
+<p>start Date:{{ travelPlan.startDate | formatDate }}</p>
+<p>End Date:{{ travelPlan.endDate | formatDate }}</p>
